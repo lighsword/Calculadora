@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:id="@+id/resultado1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:textSize="50dp"
+            android:hint="0.0"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:id="@+id/resultado2"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="50dp"
+            android:hint="0.0"></TextView>
+    </LinearLayout>
+    <!--Fila para borrar la pantalla-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/btnborrar"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="320dp"
+            android:backgroundTint="@color/arena"
+            android:onClick="presionarDigito"
+            android:text="C"
+            android:textColor="@color/black"></Button>
+    </LinearLayout>
+    <!--Primera fila-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+
+        <Button
+            android:id="@+id/btnsiete"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/blue_claro"
+            android:onClick="presionarDigito"
+            android:text="7"
+            android:textColor="@color/black"></Button>
+
+        <Button
+            android:id="@+id/btnocho"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/blue_claro"
+            android:onClick="presionarDigito"
+            android:text="8"
+            android:textColor="@color/black"></Button>
+
+        <Button
+            android:id="@+id/btnnueve"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/blue_claro"
+            android:onClick="presionarDigito"
+            android:text="9"
+            android:textColor="@color/black"></Button>
+
+        <Button
+            android:id="@+id/btnsuma"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:backgroundTint="@color/arena"
+            android:onClick="clickOperacion"
+            android:text="+"
+            android:textColor="@color/black"></Button>
+    </LinearLayout>
+    <!--Segunda fila-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+
+        <Button
+            android:id="@+id/btncuatro"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/blue_claro"
+            android:onClick="presionarDigito"
+            android:text="4"
+            android:textColor="@color/black"></Button>
+
+        <Button
+            android:id="@+id/btncinco"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/blue_claro"
+            android:onClick="presionarDigito"
+            android:text="5"
+            android:textColor="@color/black"></Button>
+
+        <Button
+            android:id="@+id/btnseis"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/blue_claro"
+            android:onClick="presionarDigito"
+            android:text="6"
+            android:textColor="@color/black"></Button>
+
+        <Button
+            android:id="@+id/btnresta"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:backgroundTint="@color/arena"
+            android:onClick="clickOperacion"
+            android:text="-"
+            android:textColor="@color/black"></Button>
+    </LinearLayout>
+    <!--Tercera fila-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+
+        <Button
+            android:id="@+id/btnuno"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/blue_claro"
+            android:onClick="presionarDigito"
+            android:text="1"
+            android:textColor="@color/black"></Button>
+
+        <Button
+            android:id="@+id/btndos"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/blue_claro"
+            android:onClick="presionarDigito"
+            android:text="2"
+            android:textColor="@color/black"></Button>
+
+        <Button
+            android:id="@+id/btntres"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/blue_claro"
+            android:onClick="presionarDigito"
+            android:text="3"
+            android:textColor="@color/black"></Button>
+
+        <Button
+            android:id="@+id/btnmultiplicacion"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:backgroundTint="@color/arena"
+            android:onClick="clickOperacion"
+            android:text="*"
+            android:textColor="@color/black"></Button>
+    </LinearLayout>
+    <!--Cuarta fila-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+
+        <Button
+            android:id="@+id/btncero"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/blue_claro"
+            android:onClick="presionarDigito"
+            android:text="0"
+            android:textColor="@color/black"></Button>
+
+        <Button
+            android:id="@+id/btndecimal"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/sol"
+            android:textColor="@color/black"
+            android:text="."
+            ></Button>
+        <Button
+            android:id="@+id/btnigual"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/sol"
+            android:textColor="@color/black"
+            android:text="="></Button>
+
+        <Button
+            android:id="@+id/btndividir"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:backgroundTint="@color/arena"
+            android:onClick="clickOperacion"
+            android:text="/"
+            android:textColor="@color/black"></Button>
+    </LinearLayout>
+</LinearLayout>
